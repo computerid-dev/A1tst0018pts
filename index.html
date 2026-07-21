@@ -1,0 +1,211 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NugrohoTools</title>
+    <link rel="stylesheet" href="assets/asset_0001.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/asset_0002.css">
+</head>
+<body>
+
+    <div class="splash-screen" id="splash">
+        <div class="bintang-container">
+            <div class="bintang"><i class="fas fa-star"></i></div>
+            <div class="bintang"><i class="fas fa-star"></i></div>
+            <div class="bintang"><i class="fas fa-star"></i></div>
+            <div class="bintang"><i class="fas fa-star"></i></div>
+            <div class="bintang"><i class="fas fa-star"></i></div>
+            <div class="bintang"><i class="fas fa-star"></i></div>
+            <div class="bintang"><i class="fas fa-star"></i></div>
+            <div class="bintang"><i class="fas fa-star"></i></div>
+            <div class="bintang"><i class="fas fa-star"></i></div>
+            <div class="bintang"><i class="fas fa-star"></i></div>
+            <div class="bintang"><i class="fas fa-star"></i></div>
+            <div class="bintang"><i class="fas fa-star"></i></div>
+            <div class="bintang"><i class="fas fa-star"></i></div>
+            <div class="bintang"><i class="fas fa-star"></i></div>
+            <div class="bintang"><i class="fas fa-star"></i></div>
+            <div class="bintang bawah"><i class="fas fa-star"></i></div>
+            <div class="bintang bawah"><i class="fas fa-star"></i></div>
+            <div class="bintang bawah"><i class="fas fa-star"></i></div>
+            <div class="bintang bawah"><i class="fas fa-star"></i></div>
+            <div class="bintang bawah"><i class="fas fa-star"></i></div>
+            <div class="bintang bawah"><i class="fas fa-star"></i></div>
+            <div class="bintang bawah"><i class="fas fa-star"></i></div>
+            <div class="bintang bawah"><i class="fas fa-star"></i></div>
+            <div class="bintang bawah"><i class="fas fa-star"></i></div>
+            <div class="bintang bawah"><i class="fas fa-star"></i></div>
+            <div class="bintang bawah"><i class="fas fa-star"></i></div>
+            <div class="bintang bawah"><i class="fas fa-star"></i></div>
+            <div class="bintang bawah"><i class="fas fa-star"></i></div>
+            <div class="bintang bawah"><i class="fas fa-star"></i></div>
+            <div class="bintang bawah"><i class="fas fa-star"></i></div>
+        </div>
+        <div class="bintang-putar"><i class="fas fa-star"></i></div>
+        <div class="splash-title">⚡ NugrohoTools</div>
+        <div class="splash-sub">by Computer[ID]•GROUP</div>
+    </div>
+
+    <div class="bg-glow"></div>
+
+    <div class="video-banner">
+        <video autoplay loop muted playsinline webkit-playsinline="true" preload="auto">
+            <source src="assets/asset_0003.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay">
+            <h1>
+                ⚡ NugrohoTools
+                <span>by Computer[ID]•GROUP</span>
+            </h1>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="user-card" id="userCard">
+            <div class="user-avatar"><i class="fas fa-user"></i></div>
+            <div class="user-info">
+                <div class="item">
+                    <i class="fas fa-globe"></i>
+                    <span class="label">Negara</span>
+                    <span class="value" id="userCountry">Loading...</span>
+                </div>
+                <div class="item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span class="label">Device</span>
+                    <span class="value" id="userDevice">Loading...</span>
+                </div>
+                <div class="item">
+                    <i class="fas fa-globe"></i>
+                    <span class="label">Browser</span>
+                    <span class="value" id="userBrowser">Loading...</span>
+                </div>
+                <div class="item">
+                    <i class="fas fa-signal"></i>
+                    <span class="label">Status</span>
+                    <span class="value online" id="userStatus">● Online</span>
+                </div>
+                <div class="item">
+                    <div class="battery-bar">
+                        <i class="fas fa-battery-three-quarters" style="color:#22c55e;font-size:12px;"></i>
+                        <div class="level"><div class="fill" id="batteryFill" style="width:75%;"></div></div>
+                        <span class="perc" id="batteryPercent">75%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-tabs" id="navTabs">
+            <button class="nav-tab active" data-tab="all"><i class="fas fa-th-large"></i> All</button>
+            <button class="nav-tab" data-tab="downloader"><i class="fas fa-download"></i> Downloader</button>
+            <button class="nav-tab" data-tab="maker"><i class="fas fa-wand-magic-sparkles"></i> Maker</button>
+            <button class="nav-tab" data-tab="tools"><i class="fas fa-screwdriver-wrench"></i> Tools</button>
+            <button class="nav-tab" data-tab="vault"><i class="fas fa-archive"></i> Vault</button>
+            <button class="nav-tab" data-tab="external"><i class="fas fa-link"></i> External</button>
+            <button class="nav-tab" data-tab="about"><i class="fas fa-circle-info"></i> Tentang</button>
+        </div>
+
+        <div id="tab-all" class="tab-content active">
+            <div class="section-title">
+                <i class="fas fa-th-large" style="color:#a78bfa;"></i> Semua Tools
+                <span class="line"></span>
+            </div>
+            <div class="tools-grid" id="allGrid"></div>
+        </div>
+
+        <div id="tab-downloader" class="tab-content">
+            <div class="section-title">
+                <i class="fas fa-download" style="color:#a78bfa;"></i> Downloader
+                <span class="line"></span>
+            </div>
+            <div class="tools-grid" id="downloaderGrid"></div>
+        </div>
+
+        <div id="tab-maker" class="tab-content">
+            <div class="section-title">
+                <i class="fas fa-wand-magic-sparkles" style="color:#a78bfa;"></i> Maker
+                <span class="line"></span>
+            </div>
+            <div class="tools-grid" id="makerGrid"></div>
+        </div>
+
+        <div id="tab-tools" class="tab-content">
+            <div class="section-title">
+                <i class="fas fa-screwdriver-wrench" style="color:#a78bfa;"></i> Tools
+                <span class="line"></span>
+            </div>
+            <div class="tools-grid" id="toolsGrid"></div>
+        </div>
+
+        <div id="tab-vault" class="tab-content">
+            <div class="section-title">
+                <i class="fas fa-archive" style="color:#a78bfa;"></i> Vault
+                <span class="line"></span>
+            </div>
+            <div class="tools-grid" id="vaultGrid"></div>
+        </div>
+
+        <div id="tab-external" class="tab-content">
+            <div class="section-title">
+                <i class="fas fa-link" style="color:#a78bfa;"></i> External Tools
+                <span class="line"></span>
+            </div>
+            <div class="tools-grid" id="externalGrid"></div>
+        </div>
+
+        <div id="tab-about" class="tab-content">
+            <div class="section-title">
+                <i class="fas fa-circle-info" style="color:#a78bfa;"></i> Tentang / Developer Info
+                <span class="line"></span>
+            </div>
+            <div class="about-card">
+                <div class="about-row">
+                    <i class="fas fa-user"></i>
+                    <span class="label">Pembuat</span>
+                    <span class="value">Nugroho Y.R</span>
+                </div>
+                <div class="about-row">
+                    <i class="fas fa-building"></i>
+                    <span class="label">Perusahaan/Brand</span>
+                    <span class="value">Computer[ID]•GROUP</span>
+                </div>
+                <div class="about-row">
+                    <i class="fas fa-envelope"></i>
+                    <span class="label">Email</span>
+                    <span class="value">nugrohokelyn@gmail.com</span>
+                </div>
+                <div class="about-row">
+                    <i class="fa-brands fa-github"></i>
+                    <span class="label">GitHub</span>
+                    <span class="value">ComputerID-Dev</span>
+                </div>
+                <div class="about-row">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span class="label">Saluran WhatsApp Resmi</span>
+                    <a class="value link" href="https://whatsapp.com/channel/0029Vb8In46CMY0HCCQpYr1M" target="_blank" rel="noopener noreferrer">Buka Saluran</a>
+                </div>
+                <div class="about-note">
+                    <i class="fas fa-triangle-exclamation"></i>
+                    Info & source resmi hanya tersedia di saluran WhatsApp di atas.
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <i class="fas fa-bolt"></i> NugrohoTools · by Computer[ID]•GROUP
+        </div>
+    </div>
+
+    <div class="tool-viewer" id="toolViewer">
+        <div class="tool-viewer-content" id="toolViewerContent">
+            <button class="tool-viewer-close" onclick="closeTool()"><i class="fas fa-times"></i></button>
+            <div id="toolViewerBody"></div>
+        </div>
+    </div>
+
+    <script src="assets/asset_0004.js"></script>
+</body>
+</html>
