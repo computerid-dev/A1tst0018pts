@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body, #root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body{
+  background: #050505;
+  color: #ffffff;
+  font-family: "Segoe UI", Roboto, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a{ color: inherit; text-decoration: none; }
+
+input, textarea{
+  width: 100%;
+  background: #16161c;
+  border: 1px solid #242430;
+  padding: 14px 16px;
+  border-radius: 12px;
+  font-size: 15px;
+  color: #fff;
+  outline: none;
+}
+
+input::placeholder, textarea::placeholder{
+  color: #9a9aa5;
+}
+
+input:focus, textarea:focus{
+  border-color: #7c5cff;
+}
+
+button{
+  cursor: pointer;
+}
+
+.btn-primary{
+  width: 100%;
+  background: linear-gradient(90deg, #7c5cff, #33b5ff);
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 14px 20px;
+  border-radius: 12px;
+  transition: .15s ease;
+  border: none;
+}
+.btn-primary:hover{ filter: brightness(1.08); }
+.btn-primary:active{ transform: scale(.98); }
+.btn-primary:disabled{ opacity: .5; cursor: not-allowed; }
+
+.btn-secondary{
+  width: 100%;
+  background: #16161c;
+  border: 1px solid #242430;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 14px 20px;
+  border-radius: 12px;
+}
+
+.field-error{
+  color: #ff4a4a;
+  font-size: 12px;
+  margin-top: 6px;
+  min-height: 14px;
+}
+
+.card{
+  background: #101014;
+  border: 1px solid #242430;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.5);
+}
+
+.hidden{ display: none !important; }
+
+::-webkit-scrollbar{ width: 6px; height: 6px; }
+::-webkit-scrollbar-thumb{ background: #242430; border-radius: 8px; }
